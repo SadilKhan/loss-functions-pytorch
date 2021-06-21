@@ -1,4 +1,5 @@
 import torch
+import torch.nn as nn
 import math
 from PIL import Image
 
@@ -66,7 +67,7 @@ class EIoU_Loss(nn.Module):
   class GIoU_Loss(nn.Module):
     """ Generalized Intersection Over Union Loss.
     Original Paper: https://arxiv.org/pdf/1902.09630.pdf
-    By: Mohammad Sadil Khan
+    Code By: Mohammad Sadil Khan
     """
 
     def __init__(self):
